@@ -1,0 +1,104 @@
+/* General */
+body {
+  background-color: #F8FEE6;
+  margin: 0;
+  font-family: Didot, Arial, sans-serif;
+  font-weight: 700;
+}
+main h2 {
+  font-size: 32px;
+  font-family: Didot, Arial, sans-serif;
+  font-weight: 700;
+}
+main h3 {
+  font-size: 26px;
+  font-family: Didot, Arial, sans-serif;
+  font-weight: 700;
+}
+main p {
+ font-family: Didot, Arial, sans-serif;
+ line-height: 1.5em;
+ margin-bottom: 0em;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color: #566645;
+  margin-bottom: 40px;
+  padding: 20px;
+  display: block;
+}
+header h1 {
+  color: #F8FEE6;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-family: Didot, Arial, sans-serif;
+  font-size: 58px;
+}
+header h2 {
+  color: #F8FEE6;
+  text-align: center;
+  margin: 0;
+  padding: 0px;
+  font-family: Didot, Arial, sans-serif;
+  font-size: 36px;
+}
+
+/* Main part */
+.wrapper {
+  width: 100%;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item {
+  flex: 1;
+  margin: 5px;
+  align-items: center;
+}
+
+/* Group items */
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* Articles */
+#intro, #portfolio {
+  margin-bottom: 100px;
+}
+#about, #contact {
+  background-color: #C5D1B1;
+  padding: 20px 0 50px 0;
+  margin: 120px 0;
+}
+
+/* Images */
+.profpic {
+  max-width: 500px;
+  height: auto;
+  border-radius: 5%;
+}
+.camping {
+  max-width: 500px;
+  max-height: 600px;
+  border-radius: 5%;
+}
+
+/* Links */
+a:link, a:visited {
+  color: #45403C;
+}
+a:hover, a:active {
+  color: #776E69;
+}
