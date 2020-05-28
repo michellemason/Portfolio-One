@@ -8,7 +8,7 @@ body {
 main h2 {
   font-size: 32px;
   font-family: Didot, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
 }
 main h3 {
   font-size: 26px;
@@ -57,7 +57,7 @@ header h2 {
 }
 .item {
   flex: 1;
-  margin: 5px;
+  margin: 10px;
   align-items: center;
 }
 
@@ -79,7 +79,7 @@ header h2 {
 }
 #about, #contact {
   background-color: #C5D1B1;
-  padding: 20px 0 50px 0;
+  padding: 20px 0 100px 0;
   margin: 120px 0;
 }
 
@@ -102,3 +102,35 @@ a:link, a:visited {
 a:hover, a:active {
   color: #776E69;
 }
+
+/* Form info */
+form {
+  padding-right: 15px;
+}
+form label {
+  display: flex;
+}
+
+form input, 
+form textarea {
+  width: 300px;
+  margin-bottom: 11px;
+}
+
+form textarea {
+  height: 180px;
+}
+form button {
+    justify-content: center;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 0;
+    font-family: Didot;
+    font-size: 16px;
+    background: #566645;
+    color: #F8FEE6;
+    margin: 0 auto;
+}
+
+
