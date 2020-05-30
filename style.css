@@ -25,7 +25,7 @@ main p {
 header {
   text-align: center;
   background-color: #566645;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding: 20px;
   display: block;
 }
@@ -33,7 +33,7 @@ header h1 {
   color: #F8FEE6;
   text-align: center;
   margin: 0;
-  padding: 10px;
+  padding: 5px;
   font-family: Didot, Arial, sans-serif;
   font-size: 58px;
 }
@@ -41,10 +41,36 @@ header h2 {
   color: #F8FEE6;
   text-align: center;
   margin: 0;
-  padding: 0px;
+  padding: 5px;
   font-family: Didot, Arial, sans-serif;
   font-size: 36px;
 }
+header nav {
+  display: flex;
+  justify-content: center;
+  }
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  font-family: Didot, Arial, sans-serif;
+  font-size: 20px;
+  color: #F8FEE6;
+  text-decoration: none;
+  padding: 0 30px 0 0;
+}
+header nav ul li a:hover {
+  color: #F8FEE6;
+}
+header nav ul li a:link {
+  color: #F8FEE6;
+}
+
 
 /* Main part */
 .wrapper {
@@ -61,15 +87,24 @@ header h2 {
   align-items: center;
 }
 
+
 /* Group items */
 @media all and (min-width: 800px) {
   .wrapper {
     width: 80%;
     margin: auto;
   }
-
   .group {
     flex-direction: row;
+  }
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+  header nav ul {
+   display: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -94,12 +129,15 @@ header h2 {
   max-height: 600px;
   border-radius: 5%;
 }
-
-/* Links */
-a:link, a:visited {
-  color: #45403C;
+.placeholder {
+  margin-top: 10px;
 }
-a:hover, a:active {
+/* Links */
+a.contactInfo:link, a.contactInfo:visited {
+  color: #45403C;
+  text-decoration: none;
+}
+a.contactInfo:hover, a.contactInfo:active {
   color: #776E69;
 }
 
